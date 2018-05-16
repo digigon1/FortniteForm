@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fortnite Form</title>
+
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<script type="text/javascript" src="form.js"></script>
+
+</head>
+<body>
+<form>
+	<p>
+		<h3>
+			Competitive mode
+		</h3>
+		<p>
+			<input class="check" type="radio" name="comp" id="comp" value="solo" checked onchange="update_total()">SOLO
+			<input class="check" type="radio" name="comp" id="comp" value="duo" onchange="update_total()">DUO
+			<input class="check" type="radio" name="comp" id="comp" value="squad" onchange="update_total()">SQUAD
+		</p>
+	</p>
+	<p>
+		<h3>
+			Platform
+		</h3>
+		<p>
+			<input class="check" type="radio" name="plat" id="plat" value="pc" checked onchange="update_total()">PC
+			<input class="check" type="radio" name="plat" id="plat" value="ps4" onchange="update_total()">PS4
+			<input class="check" type="radio" name="plat" id="plat" value="xbox" onchange="update_total()">XBOX ONE
+		</p>
+	</p>
+	<p>
+		<h3>
+			Wins: 
+		</h3>
+		<p>
+			<input class="check" type="radio" name="wins_mode" id="wins_mode" value="solo" checked onchange="update_total()">SOLO
+			<input class="check" type="radio" name="wins_mode" id="wins_mode" value="duo" onchange="update_total()">DUO (+40% extra)
+			<input class="check" type="radio" name="wins_mode" id="wins_mode" value="squad" onchange="update_total()">SQUAD (+80% extra)
+		</p>
+		<p>
+			<input id="wins_amount" type="range" name="wins_amount" min="1" max="50" step="1" value="1" oninput="wins_slider(event)">
+			<div id="wins">1 win</div>
+		</p>
+	</p>
+	<p>
+		<h3>
+			Specials
+		</h3>
+		<p>
+			<input class="check" type="checkbox" name="9_more_special" id="9_more_special" onchange="update_total()">End game with 9 or more kills
+		</p>
+		<p>
+			<input class="check" type="checkbox" name="stream_special" id="stream_special" onchange="update_total()">Stream my boost
+		</p>
+		<p>
+			<input class="check" type="checkbox" name="old_booster_special" id="old_booster_special" onchange="update_total()">I want my old booster
+		</p>
+	</p>
+	<p>
+		<h3>
+			Total:
+		</h3>
+		<h2 id="total">
+			$10.00
+		</h2>
+		<h3>
+			Coupon:
+		</h3>
+		<p>
+			<input type="text" name="coupon" id="coupon" oninput="update_total()">
+		</p>
+		<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+		<div id="SkypeButton_Call_elojobbing_1">
+			<script type="text/javascript">
+			Skype.ui({
+			"name": "chat",
+			"element": "SkypeButton_Call_elojobbing_1",
+			"participants": ["elojobbing"],
+			"imageSize": 32
+			});
+			</script>
+		</div>
+	</p>
+
+</form>
+</body>
+</html>
