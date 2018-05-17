@@ -97,5 +97,10 @@ form {
     border-color: #ddd;
     box-shadow: 2px 2px 2px #EEE;
     height: 25px;
-    width: 50%;
+    width: 70%;
+}
+
+.coupon_paragraph {
+	text-align: center;
+	color: #F36510;
 }
